@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 
 const Profile = () => {
   const history = useHistory();
+
   const onLogOutClick = () => {
     authService.signOut();
     history.push("/");
