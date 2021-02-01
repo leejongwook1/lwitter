@@ -1,6 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
+import "firebase/storage";
 
 //깃허브 만큼은 보이게 하지 않으려고 환경변수 사용
 const firebaseConfig = {
@@ -18,3 +19,4 @@ export const firebaseInstance = firebase;
 
 export const authService = firebase.auth();
 export const dbService = firebase.firestore();
+export const storageService = firebase.storage();
