@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/lwitter/static/css/main.e3670fe6.chunk.css",
+    "main.js": "/lwitter/static/js/main.1e347614.chunk.js",
+    "main.js.map": "/lwitter/static/js/main.1e347614.chunk.js.map",
+    "runtime-main.js": "/lwitter/static/js/runtime-main.bb41904e.js",
+    "runtime-main.js.map": "/lwitter/static/js/runtime-main.bb41904e.js.map",
+    "static/js/2.5ad43e96.chunk.js": "/lwitter/static/js/2.5ad43e96.chunk.js",
+    "static/js/2.5ad43e96.chunk.js.map": "/lwitter/static/js/2.5ad43e96.chunk.js.map",
+    "index.html": "/lwitter/index.html",
+    "static/css/main.e3670fe6.chunk.css.map": "/lwitter/static/css/main.e3670fe6.chunk.css.map",
+    "static/js/2.5ad43e96.chunk.js.LICENSE.txt": "/lwitter/static/js/2.5ad43e96.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb41904e.js",
+    "static/js/2.5ad43e96.chunk.js",
+    "static/css/main.e3670fe6.chunk.css",
+    "static/js/main.1e347614.chunk.js"
+  ]
+}
