@@ -10,20 +10,38 @@ function App() {
     //상태 변경시 user를 체크하여 로그인 상태유무를 판별
     authService.onAuthStateChanged((user) => {
       if (user) {
-        setUserObj(user); //로그인 되있는 유저를 저장
+        setUserObj({
+          displayName: user.displayName,
+          uid: user.uid,
+          updateProfile: (args) => user.updateProfile(args),
+        });
+      } else {
+        setUserObj(null);
       }
       setInit(true);
     });
   }, []);
 
+  const refreshUser = () => {
+    const user = authService.currentUser;
+    setUserObj({
+      displayName: user.displayName,
+      // uid: user.uid,
+      // updateProfile: (args) => user.updateProfile(args),
+    });
+  };
+
   return (
     <>
       {init ? (
-        <AppRouter isLoggedIn={Boolean(userObj)} userObj={userObj} />
+        <AppRouter
+          refreshUser={refreshUser}
+          isLoggedIn={Boolean(userObj)}
+          userObj={userObj}
+        />
       ) : (
         "Initializing..."
       )}
-      <footer>&copy; {new Date().getFullYear()} lwitter</footer>
     </>
   );
 }
